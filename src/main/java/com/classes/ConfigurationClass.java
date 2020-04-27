@@ -1,10 +1,12 @@
 package com.classes;
 
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Bean;
 
-@Configuration
-@ComponentScan(basePackages ="com.classes")
+//@Configuration
+//@ComponentScan(basePackages ="com.classes")
 public class ConfigurationClass {
-
+    @Bean
+	public College college() {
+	return new College();  
+  }
 }
