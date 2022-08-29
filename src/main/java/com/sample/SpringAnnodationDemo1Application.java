@@ -18,6 +18,7 @@ public class SpringAnnodationDemo1Application {
 	 ApplicationContext applicationContext= new AnnotationConfigApplicationContext(ConfigurationClass.class);
 		System.out.println("Bean is initialized");
 		College  call= (College) applicationContext.getBean(College.class);
+		
 		call.show();
 	
 		
