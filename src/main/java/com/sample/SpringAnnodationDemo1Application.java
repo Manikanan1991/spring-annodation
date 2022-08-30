@@ -11,7 +11,6 @@ import com.classes.ConfigurationClass;
 
 @SpringBootApplication
 public class SpringAnnodationDemo1Application {
-
 	public static void main(String[] args) {
 		//ApplicationContext applicationContext = SpringApplication.run(SpringAnnodationDemo1Application.class, args);
 		//ApplicationContext applicationContext =new ClassPathXmlApplicationContext("spring.xml");
@@ -20,7 +19,7 @@ public class SpringAnnodationDemo1Application {
 		College  call= (College) applicationContext.getBean(College.class);
 		
 		call.show();
-	
+	System.out.println();
 		
 		
 	}
